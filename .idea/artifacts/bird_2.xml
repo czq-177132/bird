@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="bird-2">
+    <output-path>$PROJECT_DIR$/out/artifacts/bird_2</output-path>
+    <root id="archive" name="bird-2.jar">
+      <element id="module-output" name="bird" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/web/WEB-INF/lib/jlayer-1.0.1.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/web/WEB-INF/lib/mp3spi-1.9.5.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/web/WEB-INF/lib/tritonus-share-0.3.7.4.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

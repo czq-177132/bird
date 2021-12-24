@@ -13,6 +13,13 @@ import java.util.Random;
  * Date : 2020/11/25 19:29
  */
 public class MorningFactory extends BaseGameFactory {
+
+    /**
+     *
+     * @param x
+     * @return
+     */
+
     @Override
     public BaseColumn[] createColumn(int x) {
         Random rd = new Random();

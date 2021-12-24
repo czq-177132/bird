@@ -17,16 +17,16 @@ public class MyImage {
     private static BufferedImage[] birdImageArray = new BufferedImage[3];
     private static String [][] bird_color =
             new String[][]{
-                    {"../../../../img/bird0_0.png","../../../../img/bird0_1.png","../../../../img/bird0_2.png"},
-                    {"../../../../img/bird1_0.png","../../../../img/bird1_1.png","../../../../img/bird1_2.png"},
-                    {"../../../../img/bird2_0.png","../../../../img/bird2_1.png","../../../../img/bird2_2.png"}
+                    {"/img/bird0_0.png", "/img/bird0_1.png", "/img/bird0_2.png"},
+                    {"/img/bird1_0.png", "/img/bird1_1.png", "/img/bird1_2.png"},
+                    {"/img/bird2_0.png", "/img/bird2_1.png", "/img/bird2_2.png"}
                        };
     static {
         try {
-            img[0]= ImageIO.read(GreenColumn.class.getResource("../../../../../img/pipe_down.png"));
-            img[1]= ImageIO.read(GreenColumn.class.getResource("../../../../../img/pipe_up.png"));
-            img[2]= ImageIO.read(PinkColumn.class.getResource("../../../../../img/pipe2_down.png"));
-            img[3]= ImageIO.read(PinkColumn.class.getResource("../../../../../img/pipe2_up.png"));
+            img[0]= ImageIO.read(GreenColumn.class.getResource("/img/pipe_down.png"));
+            img[1]= ImageIO.read(GreenColumn.class.getResource("/img/pipe_up.png"));
+            img[2]= ImageIO.read(PinkColumn.class.getResource("/img/pipe2_down.png"));
+            img[3]= ImageIO.read(PinkColumn.class.getResource("/img/pipe2_up.png"));
 
         } catch (IOException e) {
             e.printStackTrace();

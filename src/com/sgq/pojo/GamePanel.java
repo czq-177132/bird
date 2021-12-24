@@ -41,7 +41,7 @@ public class GamePanel extends JPanel{
 
         setBackground(Color.PINK);
         try{
-            bg= ImageIO.read(this.getClass().getResource("../../../img/bg_day.png"));
+            bg= ImageIO.read(this.getClass().getResource("/img/bg_day.png"));
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -62,6 +62,7 @@ public class GamePanel extends JPanel{
                     column.start();
                 }
                 if(runStatus!=true){
+
                     runStatus=true;
                 }
 
@@ -90,17 +91,17 @@ public class GamePanel extends JPanel{
         g.drawImage(baseBird.birdImageArray[bird_count],baseBird.getX(),baseBird.getY(),null);
 
         if(runStatus==false){
-            g.drawImage(MyImage.getOneImg("../../../img/title.png"),55,120,null);
-            g.drawImage(MyImage.getOneImg("../../../img/button_rate.png"),107,250,null);
-            g.drawImage(MyImage.getOneImg("../../../img/button_play.png"),14,330,null);
-            g.drawImage(MyImage.getOneImg("../../../img/button_score.png"),158,330,null);
+            g.drawImage(MyImage.getOneImg("/img/title.png"),55,120,null);
+            g.drawImage(MyImage.getOneImg("/img/button_rate.png"),107,250,null);
+            g.drawImage(MyImage.getOneImg("/img/button_play.png"),14,330,null);
+            g.drawImage(MyImage.getOneImg("/img/button_score.png"),158,330,null);
         }
 
 
     }
 
     class BirdThread extends Thread{
-        Boolean movDir =false; //false向上
+        Boolean movDir =false; //false向上  true向下
         @Override
         public void run() {
             while (true){
@@ -131,7 +132,7 @@ public class GamePanel extends JPanel{
 
                 try {
                     repaint();
-                    Thread.sleep(15);
+                    Thread.sleep(10);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }

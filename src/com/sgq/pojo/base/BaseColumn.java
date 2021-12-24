@@ -16,7 +16,7 @@ public abstract class BaseColumn {
     public BaseColumn [] columns = new BaseColumn[2]; //放两个柱子，一上一下，为一组
      {
         try {
-            img = read(BaseColumn.class.getResource("../../../../img/pipe_down.png"));
+            img = read(BaseColumn.class.getResource("/img/pipe_down.png"));
         } catch (IOException e) {
             e.printStackTrace();
         }

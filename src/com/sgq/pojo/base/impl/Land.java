@@ -56,7 +56,7 @@ public class Land {
 
     public Land(){
         try{
-            img= ImageIO.read(this.getClass().getResource("../../../../../img/land.png"));
+            img= ImageIO.read(this.getClass().getResource("/img/land.png"));
         } catch (Exception e) {
             e.printStackTrace();
         }

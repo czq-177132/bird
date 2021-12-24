@@ -17,11 +17,11 @@ public class GameFrame extends JFrame {
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setTitle("Copyright©2020 ByShugq@foxmail.com");
-        setResizable(false);
+//        setResizable(false);
 
 
         try{
-            setIconImage(ImageIO.read(this.getClass().getResource("../../../img/bear.jpg")));
+            setIconImage(ImageIO.read(this.getClass().getResource("/img/boy.png")));
         } catch (Exception e) {
             e.printStackTrace();
         }
